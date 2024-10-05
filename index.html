@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+
+    <!-- <script>
+            const array = ["apple", "banana", "orange"]; 
+            console.log(array.at(1));
+    </script> -->
+
+    <!-- <script>
+        const array = ["ren", "ghe", "son"]; 
+        console.log(array.join(" - ")); 
+    </script> -->
+
+    <!-- <script>
+        const array= ["ren", "ghe", "son"];
+        array.pop(2);
+        console.log(array);
+    </script> -->
+
+<!-- <script>
+    const array= ["ren", "ghe", "son"];
+    array.push("vil","van");
+    console.log(array);
+</script> -->
+
+<!-- <script>
+    const array= ["ren", "ghe", "son","vil","van"];
+    console.log(array.splice(1,2));
+    console.log(array);
+</script> -->
+
+<!-- <script>
+    const  firstname = "renghe";
+const lastname = "vilva";
+const newArray =  firstname.concat(" " +lastname); 
+console.log(newArray); 
+</script> -->
+
+   <!-- <script>
+      const array= ["ren", "ghe", "son","vil","van"];
+    console.log(array.slice(0,3));
+    console.log(array);
+   </script> -->
+
+<!-- <script>
+    const array= ["ren", "ghe", "son","vil","van"];
+  console.log(array.reverse());
+ </script> -->
+
+<!-- <script>
+    const array= ["ren", "ghe", "son","vil","van"];
+  console.log(array.indexOf("vil"));
+ </script> -->
+
+<!-- <script>
+    const array= ["ren", "ghe", "son","vil","van"];
+  console.log(array.includes("vil"));
+ </script> -->
+
+ <!-- <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+    </head>
+    <body>
+    
+    <h2> Array Methods example </h2>
+    
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      Name: <input type="text" name="fname">
+      <input type="submit" value="Add"> <br><br>
+      Remove: <input type="text" name="fname">
+      <input type="submit" value="Remove"> <br> <br>
+       <span><input type="submit" value="short array">  <input type="submit" value="Reserve Array "> </span>
+       
+       <p> Original Array:Apple, Banana, Cherry, Date, Grape</p>
+    </form> -->
+
+<!-- <h1 id="demo"> array Methods Example</h1>
+
+<label for="addEle"> Add Element </label>
+<input type="text" id="addEle"> <span><button> Add </button></span>
+
+<label for="reEle"> Add Element </label>
+<input type="text" id="reEle"> <span><button> Remove </button></span>
+<button> Sort Array </button> <button> Reverse Array </button>
+
+<p>Original Array: Apple, Banana, Cherry, Date, Grape</p>
+
+ <script>
+    window.alert("demo");
+ </script> -->
+
+
+
+
+ <h1>  Array Methods example </h1>
+
+ <form action="demo" style="item-align: center; border-width: 10px;">
+    <label for="addEleinput"> Add Element </label>
+    <input type="text" id="addEleinput"> 
+    <button type="button"  onclick="addEle()"> Add</button> <br><br>
+
+    <label for="reEleinput"> Remove Element: </label>
+    <input type="text" id="reEleinput"> 
+    <button type="button" onclick="rmov()"> Remove</button> <br><br>
+    <button type="button" onclick="sort()"> Sort Array</button>
+    <button type="button" onclick="reverse()"> reverse Array</button>
+
+    <p id="outputs"></p>
+
+ </form>
+
+<script>
+    let fruit = [ "apple" , "banana" , "Grape" , "Data" , "Cherry"]
+
+
+    function outputArray(){
+
+        document.getElementById("outputs").innerHTML = "original Array: " + fruit.join(" , ");
+    }
+
+    function addEle(){
+        let newElement = document.getElementById("addEleinput").value;
+        fruit.push(newElement) ;
+        outputArray();
+
+    }
+
+    function rmov(){
+        let newElementRemove = document.getElementById("reEleinput").value;
+        let index = fruit.indexOf(newElementRemove);
+        if (index !== -1) {
+
+            fruit.splice(index,1);
+        }
+        outputArray();
+    }
+
+    function sort(){
+        fruit.sort();
+        outputArray();
+    }
+
+    function reverse(){
+        fruit.reverse();
+        outputArray();
+    }
+
+    outputArray();
+
+
+</script>
+
+
+    <script src="ind.js"></script>
+</body>
+</html>
